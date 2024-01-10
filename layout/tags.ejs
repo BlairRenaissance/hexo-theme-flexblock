@@ -1,0 +1,21 @@
+<!-- Tags -->
+<div class="archives-wrap">
+  <% if (site.tags.length){ %>
+    <div class="content-container layout-block tag-list">
+      <% site.tags.forEach(function(tag) { %>
+        <div class="tag-item layout-padding">
+          <article class="card-container tag-card content-padding--large soft-size--large soft-style--box">
+            <% if (tag.cover) { %>
+              <div class="card-cover" background-image-lazy data-img="<%= tag.cover %>"></div>
+            <% } %>
+            <div class="card-text">
+              <a href="<%- url_for(tag.path) %>" itemprop="url">
+                <h2 class="card-text--title"><%= tag.name || "(no title)" %></h2>
+              </a>
+            </div>
+          </article>
+        </div>
+      <% }) %>
+    </div>
+  <% } %>     
+</div>

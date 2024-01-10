@@ -1,20 +1,22 @@
 # Header
 menu:
-  首页: /
-  友链: /links
-  关于: /about
+  Home: /
+  Archives: /archives/
+  Categories: /category/
+  Tags: /tag/
+  About: /about
 
 # 主页banner图
-banner: https://qiniu.sukoshi.xyz/src/images/68686407_p0.jpg
+banner: https://github.com/BlairRenaissance/ImageHost/blob/main/WechatIMG61.jpg?raw=true
 
 # 站点通知信息
-notice: flex-block主题部分重构，详情查看https://github.com/miiiku/flex-block
+notice: STUDY模式！
 
 # 作者信息
 author:
-  name: Sukoshi
-  avatar: https://s.gravatar.com/avatar/2d6b803eea37de0257620d5fabee7e64?s=200&r=g&d=retro
-  description: 贵在坚持
+  name: Renaissance
+  avatar: https://github.com/BlairRenaissance/ImageHost/blob/main/WeCom20240109-193846@2x.png?raw=true
+  description: 谁的身影 尽逐重楼
 
 toc:
   max_depth: 3 # 生成 TOC 的最大深度
@@ -88,7 +90,7 @@ baidu_analytics:
 # 腾讯分析
 tencent_analytics: 
 # 站点ico
-favicon: /favicon.ico
+favicon: /Tom.ico
 
 
 # Social Icon
@@ -98,5 +100,11 @@ social_icon:
     ins     :
     zhihu   :
     weibo   : 
-    github  : https://github.com/miiiku/
-    twitter : https://twitter.com/guanquanhong
+    github  : https://github.com/BlairRenaissance
+    twitter : 
+
+# Deployment
+deploy:
+  type: git
+  repo: git@github.com:BlairRenaissance/BlairRenaissance.github.io.git
+  branch: main 

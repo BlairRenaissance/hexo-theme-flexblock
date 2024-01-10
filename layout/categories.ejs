@@ -1,0 +1,21 @@
+<!-- Categories -->
+<div class="archives-wrap">
+  <% if (site.categories.length){ %>
+    <div class="content-container layout-block category-list">
+      <% site.categories.forEach(function(category) { %>
+        <div class="category-item layout-padding">
+          <article class="card-container category-card content-padding--large soft-size--large soft-style--box">
+            <% if (category.cover) { %>
+              <div class="card-cover" background-image-lazy data-img="<%= category.cover %>"></div>
+            <% } %>
+            <div class="card-text">
+              <a href="<%- url_for(category.path) %>" itemprop="url">
+                <h2 class="card-text--title"><%= category.name || "(no title)" %></h2>
+              </a>
+            </div>
+          </article>
+        </div>
+      <% }) %>
+    </div>
+  <% } %>     
+</div>
